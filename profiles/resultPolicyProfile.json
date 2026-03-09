@@ -1,0 +1,14 @@
+{
+  "profileId": "result.default.v1",
+  "schemaVersion": "1.0.0",
+  "setOutcome": {
+    "clearOffset": 0,
+    "almostOffset": -1
+  },
+  "practiceClassification": {
+    "verifiedEligible": "公式比較用練習",
+    "display": "参考練習",
+    "compatible20": "参考練習",
+    "default": "自宅練習"
+  }
+}

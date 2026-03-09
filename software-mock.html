@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/software-mock.css" />
+    <title>Flash Anzan Software Mock</title>
+  </head>
+  <body>
+    <main class="mock-board">
+      <header class="mock-header">
+        <p class="mock-kicker">Software Mock</p>
+        <h1>フラッシュ暗算 練習ソフト 画面モック</h1>
+        <p class="mock-note">公開されている公式ソフト画面の配色と面構成を参考にした、自宅練習用の非公式モックです。</p>
+      </header>
+
+      <section class="mock-grid">
+        <article class="screen-card" aria-label="menu screen">
+          <h2>メニュー画面</h2>
+          <div class="app-screen screen-green">
+            <div class="screen-title">
+              <p>公益社団法人</p>
+              <p>全国珠算教育連盟</p>
+              <strong>公式フラッシュ暗算練習</strong>
+            </div>
+            <div class="character-row">
+              <div class="character boy">P</div>
+              <div class="character girl">P</div>
+            </div>
+            <div class="button-stack">
+              <button class="app-btn btn-white">個別練習</button>
+              <button class="app-btn btn-yellow">検定開始</button>
+              <div class="button-pair">
+                <button class="app-btn btn-gray">受験者名簿登録</button>
+                <button class="app-btn btn-gray">設定</button>
+              </div>
+              <button class="app-btn btn-red">終了</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="screen-card" aria-label="setup screen">
+          <h2>問題設定画面</h2>
+          <div class="app-screen screen-pink">
+            <div class="screen-minihead">
+              <span>入力方式</span>
+              <span>表示方式</span>
+            </div>
+            <table class="setting-table">
+              <tbody>
+                <tr><th>級段位</th><td>20段</td><td>3桁 15口 1.50秒</td></tr>
+                <tr><th>出題数</th><td>10</td><td>1問ごと採点</td></tr>
+                <tr><th>クリア正解数</th><td>7</td><td>clear / almost / retry</td></tr>
+                <tr><th>解答表示</th><td>1問ずつ</td><td>表示後に次へ</td></tr>
+                <tr><th>回答制限時間</th><td>15秒</td><td>時間切れで自動遷移</td></tr>
+                <tr><th>フォントサイズ</th><td>420</td><td>全画面中央表示</td></tr>
+              </tbody>
+            </table>
+            <div class="bottom-actions">
+              <button class="app-btn btn-gray">戻る</button>
+              <button class="app-btn btn-yellow">この条件で開始</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="screen-card" aria-label="confirm screen">
+          <h2>開始確認画面</h2>
+          <div class="app-screen screen-black screen-center">
+            <p class="confirm-grade">20段</p>
+            <p class="confirm-meta">3桁　15口　1.50秒</p>
+            <p class="confirm-meta">1問目</p>
+            <div class="button-pair narrow">
+              <button class="app-btn btn-yellow">スタート</button>
+              <button class="app-btn btn-gray">問題設定</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="screen-card" aria-label="presentation screen">
+          <h2>出題画面</h2>
+          <div class="app-screen screen-black screen-stage">
+            <div class="stage-meta">
+              <span>20段</span>
+              <span>5 / 10</span>
+              <span>Verified</span>
+            </div>
+            <div class="stage-digit">648</div>
+            <p class="stage-foot">黒背景に緑の数字を全画面中央表示</p>
+          </div>
+        </article>
+
+        <article class="screen-card" aria-label="answer screen">
+          <h2>回答画面</h2>
+          <div class="app-screen screen-black screen-center">
+            <p class="answer-copy">答えを入力してください</p>
+            <input class="answer-box" value="" placeholder=" " />
+            <p class="answer-limit">制限時間 15秒</p>
+          </div>
+        </article>
+
+        <article class="screen-card" aria-label="result screen">
+          <h2>結果画面</h2>
+          <div class="app-screen screen-pink">
+            <div class="result-panel">
+              <p class="result-rank">十段</p>
+              <p>出題数 2問</p>
+              <p>正解 2問</p>
+              <p>次は頑張りましょう</p>
+            </div>
+            <table class="result-table">
+              <tbody>
+                <tr><th>第1問</th><td>579</td><td>正解</td></tr>
+                <tr><th>第2問</th><td>648</td><td>正解</td></tr>
+              </tbody>
+            </table>
+            <div class="bottom-actions">
+              <button class="app-btn btn-gray">問題設定画面へ</button>
+              <button class="app-btn btn-yellow">同じ問題を再練習</button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

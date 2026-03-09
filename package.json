@@ -1,0 +1,27 @@
+{
+  "name": "flash-anzan-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "audit:generator": "vite-node --script scripts/audit-generator.mjs",
+    "verify:ready": "npm run build && npm run audit:generator && npm run smoke:screens && npm run smoke:screens:mobile",
+    "verify:full": "npm run verify:ready && npm run test:e2e",
+    "smoke:capture": "node scripts/capture-ui-smoke.mjs",
+    "smoke:screens": "node scripts/run-smoke-with-preview.mjs",
+    "smoke:screens:mobile": "SMOKE_DEVICE=iphone14 node scripts/run-smoke-with-preview.mjs",
+    "test:contracts": "vitest run tests/contracts",
+    "test:unit": "vitest run tests/unit",
+    "test:sim": "vitest run tests/sim",
+    "test:e2e": "playwright test",
+    "test:all": "npm run test:contracts && npm run test:unit && npm run test:sim && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "vite": "^7.1.3",
+    "vitest": "^3.2.4"
+  }
+}

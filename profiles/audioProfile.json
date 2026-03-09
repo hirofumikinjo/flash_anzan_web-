@@ -1,0 +1,17 @@
+{
+  "profileId": "audio.default.v1",
+  "schemaVersion": "1.0.0",
+  "modePolicies": {
+    "display": "voice-friendly",
+    "input": "balanced",
+    "exam-like": "minimal"
+  },
+  "presentationCue": {
+    "verified20": "allowed-if-benchmark-pass",
+    "compatible20": "disabled"
+  },
+  "voiceFeedback": {
+    "correct": true,
+    "incorrect": true
+  }
+}

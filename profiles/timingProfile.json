@@ -1,0 +1,27 @@
+{
+  "profileId": "timing.default.v1",
+  "schemaVersion": "1.0.0",
+  "image": {
+    "requiresManualAdvance": true,
+    "previewMs": 2500,
+    "displayRatio": 0.9,
+    "gapRatio": 0.1
+  },
+  "timed": {
+    "defaultDisplayRatio": 0.78,
+    "defaultGapRatio": 0.22,
+    "countdownSec": 1.2
+  },
+  "prestart": {
+    "firstBeepMs": 0,
+    "secondBeepMs": 920,
+    "pauseAfterSecondBeepMs": 2140
+  },
+  "strict20": {
+    "displayRatio": 0.78,
+    "gapRatio": 0.22,
+    "maxPhaseDriftMs": 10,
+    "longFrameMs": 18,
+    "invalidateLateShowCount": 1
+  }
+}

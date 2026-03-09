@@ -1,0 +1,29 @@
+{
+  "profileId": "ui.default.v1",
+  "schemaVersion": "1.0.0",
+  "brand": {
+    "mode": "official-like",
+    "colors": {
+      "brandBlue700": "#1D4F91",
+      "brandBlue500": "#3E7FD1",
+      "paper": "#F4F7FB",
+      "stageBlack": "#050608",
+      "stageDigitGreen": "#66FF7A"
+    },
+    "fonts": {
+      "heading": "\"Hiragino Maru Gothic ProN\", \"BIZ UDPGothic\", \"Yu Gothic\", sans-serif",
+      "body": "\"Hiragino Maru Gothic ProN\", \"BIZ UDPGothic\", \"Yu Gothic\", sans-serif",
+      "digits": "\"Abacus\", \"Arial Rounded MT Bold\", \"Hiragino Maru Gothic ProN\", \"BIZ UDPGothic\", sans-serif"
+    }
+  },
+  "layout": {
+    "breakpoints": ["S", "M", "L", "XL"],
+    "setupModePhone": "bottom-sheet",
+    "setupModeDesktop": "sidebar",
+    "stageOverlay": {
+      "leftTop": "grade",
+      "topCenter": "progress",
+      "rightTop": "compatibility"
+    }
+  }
+}

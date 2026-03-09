@@ -1,0 +1,28 @@
+{
+  "profileId": "platform.default.v1",
+  "schemaVersion": "1.0.0",
+  "classes": {
+    "desktop-chromium": {
+      "uiSupport": "full",
+      "timedSupport": "full",
+      "strict20": "candidate"
+    },
+    "desktop-safari-firefox": {
+      "uiSupport": "full",
+      "timedSupport": "full",
+      "strict20": "reference-only"
+    },
+    "mobile-web": {
+      "uiSupport": "full",
+      "timedSupport": "up-to-19",
+      "strict20": "unsupported"
+    }
+  },
+  "benchmarks": {
+    "levelA": {
+      "p95FrameDeltaMs": 18,
+      "maxPhaseDriftMs": 10,
+      "longFrameCount": 0
+    }
+  }
+}

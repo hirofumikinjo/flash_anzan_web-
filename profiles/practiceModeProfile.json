@@ -1,0 +1,22 @@
+{
+  "profileId": "practice.default.v1",
+  "schemaVersion": "1.0.0",
+  "modes": {
+    "display": {
+      "postPresentState": "showingAnswer",
+      "timeoutPolicy": "stayUntilAcknowledge",
+      "recommendationEligible": false
+    },
+    "input": {
+      "postPresentState": "awaitingAnswer",
+      "timeoutPolicy": "autoRevealThenNext",
+      "recommendationEligible": true
+    },
+    "exam-like": {
+      "postPresentState": "awaitingAnswer",
+      "timeoutPolicy": "markIncorrectThenNext",
+      "judgementAutoAdvanceMs": 1000,
+      "recommendationEligible": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "profileId": "generator.default.v1",
+  "schemaVersion": "1.0.0",
+  "families": {
+    "imageFoundation": {
+      "templatePool": ["simple-seq-a", "simple-seq-b"],
+      "allowCarry": false
+    },
+    "standardExamLike": {
+      "difficultyScore": {
+        "carryCount": 1.0,
+        "patternRepetition": -0.8,
+        "answerBias": -0.6
+      }
+    },
+    "highSpeedStable": {
+      "difficultyScore": {
+        "carryCount": 0.8,
+        "rhythmVariance": -1.2,
+        "answerBias": -1.0
+      },
+      "rejectionRules": {
+        "maxPatternRun": 2,
+        "lateComputeAllowed": false
+      }
+    }
+  }
+}

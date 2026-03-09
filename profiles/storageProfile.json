@@ -1,0 +1,15 @@
+{
+  "profileId": "storage.default.v1",
+  "schemaVersion": "1.0.0",
+  "retention": {
+    "recentSeedLimit": 50,
+    "invalidSessionKeep": true
+  },
+  "backup": {
+    "exportFormat": "json",
+    "requireSchemaVersionCheck": true
+  },
+  "derivedStatsCache": {
+    "rebuildable": true
+  }
+}
